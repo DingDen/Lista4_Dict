@@ -6,14 +6,17 @@ O programa deverá imprimir como saída a quantidade de lutadores que foram apro
 a porcentagem de lutadores que foram reprovados no dia de pesagem; 
 e o nome do lutador mais leve aprovado na categoria. Em caso de empate, imprimir o que primeiro ocorrer. Caso não haja nenhum lutador aprovado, imprimir a palavra "vazio" para o nome. Cada saída deverá ser impressa em uma linha.'''
 
-limiteInf = int(input("Limite inferior: ")) #Entrada para calcular o limite superior
-limiteSup = int(limiteInf*1.08)
+while True:
+    limiteInf = int(input("Limite inferior: "))     #Entradas
+    limiteSup = int(input("Limite superior: "))
+    if limiteInf < limiteSup:
+        break
 print(f'\n{limiteInf} ----------- {limiteSup}')
 
 dictFighters = {}   #Dicionário criado para armazenamento 
 
 while True:
-    fighter = input("Nome e Peso: ").split()    #Nome e peso na mesma linha
+    fighter = input("Nome e Peso (press 0 and [enter] to stop): ").split()    #Nome e peso na mesma linha
     if fighter[0] == '0':      #Condição para quebrar o loop
         break
     dictFighters[fighter[0]] = int(fighter[1])  #Guardando um valor inteiro dentro da chave 'nome do lutador'
