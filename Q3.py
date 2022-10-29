@@ -4,6 +4,7 @@ D= {'Darth   Vader':(7.5,8.0,6.5),
     'Han   Solo':(9.0,8.5,9.5),
     'Chewbacca':(3.5,1.0,6.5)}
     onde cada par consiste do nome do estudante e das notas do mesmo. 
+    
 Escreva uma função chamada “aprovados” que receba como entrada o dicionário D e imprima o nome dos alunos aprovados. Um aluno é aprovado quando todas as suas notas são maiores que 7. Por exemplo, aprovados(D) deverá imprimir Han Solo.'''
 
 dictNotas = {} 
