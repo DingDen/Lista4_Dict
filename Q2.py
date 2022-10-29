@@ -87,4 +87,3 @@ for tabela in runnerRanking():
     rankNum += 1
     print(f"{rankNum} - {tabela}")
 print(f"\nMelhor volta: {bestLap()[1]}\nCorredor que fez a melhor volta: {bestLap()[0]}")
-    
