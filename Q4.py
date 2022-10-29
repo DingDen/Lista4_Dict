@@ -22,7 +22,7 @@ for band in dictBandeiraCusto:         #Tabela das bandeiras/custo
     print(f'{band} - R${dictBandeiraCusto[band]:.2f}')
 
 bandeira = input("Cor da bandeira: ").lower()
-while True:   #Restrição para o percentual estar entre 0-100
+while True:    #Restrição para o percentual estar entre 0-100
     valorICMS = float(input("ICMS(%) em forma decimal: "))
     #Entrada para trasnformar em real dentro do intervalo percentual 
     if valorICMS >= 0 and valorICMS <= 1 :
